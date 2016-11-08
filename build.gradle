@@ -9,6 +9,13 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        //this has to be last
+        classpath 'me.tatarka:gradle-retrolambda:3.3.0-beta4'
+        classpath 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2'
+        // Exclude the version that the android plugin depends on.
+        configurations.classpath.exclude group: 'com.android.tools.external.lombok'
+
+
     }
 }
 
@@ -16,8 +23,43 @@ allprojects {
     repositories {
         jcenter()
     }
+    tasks.withType(JavaForkOptions) {
+        // Forked processes like GradleWorkerMain for tests won't steal focus!
+        jvmArgs '-Djava.awt.headless=true'
+    }
+    // for jdk8 to avoid the R.java errors
+    if (JavaVersion.current().isJava8Compatible()){
+        tasks.withType(Javadoc) {
+            options.addStringOption('Xdoclint:none', '-quiet')
+        }
+    }
+
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    //sdk and tools
+    minSdkVersion = 16
+    targetSdkVersion = 25
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.0'
+
+    //Configure stuff
+    ourReportsDir = '${project.buildDir}/reports'
+
+    // module dependencies
+    supportLibraryVersion ='25.0.0'
+
+    constraintVersion = '1.0.0-beta3'
+    junitVersion = '4.12'
+    espressoVersion = '2.2.2'
+    uiautomatorVersion = '2.1.2'
+    runnerVersion = '0.6-alpha'
+    rulesVersion = '0.6-alpha'
+    timberVersion = '4.1.2'
+    picassoVersion = '2.5.2'
+
 }
