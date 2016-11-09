@@ -19,3 +19,5 @@ api 17 only and wrong parent widget style refs in styles.
 [Carbon dev by Marcin Korniluk 'Zielony'](https://github.com/ZieIony/Carbon)
 
 [Material Values dev by Matthieu Esnault]()
+
+[Materialize dev by Mike Penz]()
