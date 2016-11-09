@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.shareme.bluebutterfly.core.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:carbon_rippleColor="?attr/carbon_rippleColor"
+    android:clickable="true"
+    android:layout_height="@dimen/carbon_toolbarHeight">
+
+    <com.github.shareme.bluebutterfly.core.widget.TextView
+        android:paddingLeft="72dp"
+        android:id="@+id/carbon_autoCompleteLayoutRowText"
+        android:textAppearance="?attr/carbon_textAppearanceBody1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" />
+</com.github.shareme.bluebutterfly.core.widget.LinearLayout>

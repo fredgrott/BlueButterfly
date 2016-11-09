@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.shareme.bluebutterfly.core.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.github.shareme.bluebutterfly.core.widget.ImageView
+        android:id="@+id/carbon_toolbarIcon"
+        style="@style/carbon_ImageView.IconButton"
+        android:layout_width="@dimen/carbon_toolbarItemSize"
+        android:layout_height="@dimen/carbon_toolbarHeight"
+        android:layout_marginEnd="@dimen/carbon_toolbarUpTitleMargin"
+        android:layout_marginLeft="@dimen/carbon_toolbarItemMargin"
+        android:layout_marginRight="@dimen/carbon_toolbarUpTitleMargin"
+        android:layout_marginStart="@dimen/carbon_toolbarItemMargin"
+        app:carbon_inAnimation="none"
+        app:carbon_outAnimation="none" />
+
+    <com.github.shareme.bluebutterfly.core.widget.TextView
+        android:id="@+id/carbon_toolbarTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/carbon_windowPadding"
+        android:layout_marginStart="@dimen/carbon_windowPadding"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textAppearance="?attr/carbon_textAppearanceTitleInverse"
+        android:visibility="gone" />
+
+    <com.github.shareme.bluebutterfly.core.widget.LinearLayout
+        android:id="@+id/carbon_toolbarContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="end|center_vertical"
+        android:layoutDirection="locale"
+        android:minHeight="@dimen/carbon_toolbarHeight"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/carbon_padding"
+        android:paddingStart="@dimen/carbon_padding"
+        android:paddingEnd="@dimen/carbon_toolbarItemMargin"
+        android:paddingRight="@dimen/carbon_toolbarItemMargin" />
+
+</com.github.shareme.bluebutterfly.core.widget.LinearLayout>

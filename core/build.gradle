@@ -20,8 +20,10 @@ android {
         jackOptions{
             enabled false
         }
-        renderscriptTargetApi 25
-        renderscriptSupportModeBlasEnabled true
+        renderscriptTargetApi 16
+        
+        renderscriptSupportModeEnabled true
+
 
 
     }
