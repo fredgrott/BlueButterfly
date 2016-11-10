@@ -68,9 +68,9 @@ public class AlignedTextView extends com.github.shareme.bluebutterfly.core.widge
             .obtainStyledAttributes(attrs, R.styleable.TextView, defStyleAttr, defStyleRes);
 
     try {
-      mLeading = array.getDimensionPixelSize(R.styleable.TextView_leading, DEFAULT_BEHAVIOR);
-      mFirstLineLeading = array.getDimensionPixelSize(R.styleable.TextView_firstLineLeading, mLeading);
-      mLastLineDescent = array.getDimensionPixelSize(R.styleable.TextView_lastLineDescent, DEFAULT_BEHAVIOR);
+      mLeading = array.getDimensionPixelSize(R.styleable.AlignedTextView_leading, DEFAULT_BEHAVIOR);
+      mFirstLineLeading = array.getDimensionPixelSize(R.styleable.AlignedTextView_firstLineLeading, mLeading);
+      mLastLineDescent = array.getDimensionPixelSize(R.styleable.AlignedTextView_lastLineDescent, DEFAULT_BEHAVIOR);
     } finally {
       array.recycle();
     }

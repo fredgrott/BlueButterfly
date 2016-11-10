@@ -17,7 +17,7 @@
 
 <resources>
 
-    <declare-styleable name="TextView">
+    <declare-styleable name="AlignedTextView">
         <attr name="leading" format="dimension" />
         <attr name="firstLineLeading" format="dimension" />
         <attr name="lastLineDescent" format="dimension" />
