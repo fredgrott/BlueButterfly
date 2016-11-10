@@ -1,5 +1,21 @@
 <resources>
 
+    <style name="MineBase.Widget.AppCompat.Toolbar" parent="android:Widget">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="titleMargin">4dp</item>
+        <item name="maxButtonHeight">@dimen/abc_action_bar_default_height_material</item>
+        <item name="buttonGravity">top</item>
+        <item name="collapseIcon">?attr/homeAsUpIndicator</item>
+        <item name="collapseContentDescription">@string/abc_toolbar_collapse_description</item>
+        <item name="contentInsetStart">16dp</item>
+        <item name="contentInsetStartWithNavigation">@dimen/abc_action_bar_content_inset_with_nav</item>
+        <item name="android:paddingLeft">@dimen/abc_action_bar_default_padding_start_material</item>
+        <item name="android:paddingRight">@dimen/abc_action_bar_default_padding_end_material</item>
+    </style>
+
+
     <style name="carbon_Theme.Dark" parent="Theme.AppCompat">
         <item name="carbon_colorError">#ffF44336</item>
         <item name="carbon_debugMode">false</item>
@@ -455,7 +471,7 @@
         <item name="android:windowBackground">@drawable/carbon_windowbackground_light</item>
     </style>
 
-    <style name="carbon_Button" parent="@android:style/Widget.Button">
+    <style name="carbon_Button" parent="android:Widget.Button">
         <item name="android:gravity">center_vertical|center_horizontal</item>
         <item name="android:paddingTop">0dp</item>
         <item name="android:paddingBottom">0dp</item>
@@ -556,7 +572,7 @@
         <item name="carbon_rippleColor">@null</item>
     </style>
 
-    <style name="carbon_Toolbar" parent="@android:style/Base.Widget.AppCompat.Toolbar">
+    <style name="carbon_Toolbar" parent="MineBase.Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorPrimary</item>
         <item name="carbon_elevation">@dimen/carbon_elevationToolbar</item>
         <item name="carbon_icon">@raw/carbon_uparrow</item>
@@ -632,7 +648,7 @@
         <item name="android:background">?attr/carbon_dividerColor</item>
     </style>
 
-    <style name="carbon_ProgressBar" parent="@android:style/Widget.AppCompat.ProgressBar">
+    <style name="carbon_ProgressBar" parent="@android:style/Widget.ProgressBar">
         <item name="carbon_progressStyle">bar_indeterminate</item>
         <item name="carbon_tint">?attr/colorPrimary</item>
         <item name="carbon_barWidth">3dp</item>
@@ -714,7 +730,7 @@
         <item name="carbon_tint">?attr/colorPrimary</item>
     </style>
 
-    <style name="carbon_CheckedTextView" parent="@android:style/Widget.AppCompat.CompoundButton.CheckBox">
+    <style name="carbon_CheckedTextView" parent="android:Widget.CompoundButton.CheckBox">
         <item name="android:paddingRight">12dp</item>
 
         <item name="carbon_rippleColor">@null</item>
@@ -741,7 +757,7 @@
         <item name="carbon_rippleColor">?attr/carbon_colorRipple</item>
     </style>
 
-    <style name="carbon_CheckBox" parent="@android:style/Widget.AppCompat.CompoundButton.CheckBox">
+    <style name="carbon_CheckBox" parent="android:Widget.CompoundButton.CheckBox">
         <item name="android:paddingLeft">12dp</item>
 
         <item name="carbon_rippleColor">@null</item>
@@ -768,7 +784,7 @@
         <item name="carbon_rippleColor">?attr/carbon_colorRipple</item>
     </style>
 
-    <style name="carbon_RadioButton" parent="@android:style/Widget.AppCompat.CompoundButton.RadioButton">
+    <style name="carbon_RadioButton" parent="android:Widget.CompoundButton.RadioButton">
         <item name="android:paddingLeft">12dp</item>
 
         <item name="carbon_rippleColor">@null</item>
