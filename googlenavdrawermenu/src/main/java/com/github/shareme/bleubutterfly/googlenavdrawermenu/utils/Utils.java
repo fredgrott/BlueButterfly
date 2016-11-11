@@ -1,4 +1,4 @@
-package com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.utils;
+package com.github.shareme.bleubutterfly.googlenavdrawermenu.utils;
 
 /**
  * Created by Arasthel on 15/04/14.

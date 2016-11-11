@@ -1,4 +1,4 @@
-package com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views;
+package com.github.shareme.bleubutterfly.googlenavdrawermenu.views;
 
 import android.content.Context;
 import android.graphics.Typeface;

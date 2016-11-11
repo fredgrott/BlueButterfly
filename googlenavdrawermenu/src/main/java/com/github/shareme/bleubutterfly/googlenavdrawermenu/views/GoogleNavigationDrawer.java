@@ -1,5 +1,5 @@
 
-package com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views;
+package com.github.shareme.bleubutterfly.googlenavdrawermenu.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,9 +10,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.github.shareme.bleubutterfly.googlenavdrawermenu.adapters.GoogleNavigationDrawerAdapter;
+import com.github.shareme.bleubutterfly.googlenavdrawermenu.utils.Utils;
 import com.github.shareme.bluebutterfly.core.R;
-import com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.adapters.GoogleNavigationDrawerAdapter;
-import com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.utils.Utils;
 
 
 /**

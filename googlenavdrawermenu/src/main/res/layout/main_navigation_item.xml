@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     
-    <com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckableImageView
+    <com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckableImageView
         android:id="@android:id/icon"
         android:layout_width="@dimen/main_section_icon_size"
         android:layout_height="@dimen/main_section_icon_size"
@@ -16,7 +16,7 @@
         android:scaleType="centerInside"
         android:visibility="gone"/>
     
-    <com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckedTextView
+    <com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckedTextView
         android:id="@android:id/text1"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -25,5 +25,5 @@
         android:layout_toRightOf="@android:id/icon"
         tools:text="Sección Primera">
     
-    </com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckedTextView>
-</com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckableRelativeLayout>
+    </com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckedTextView>
+</com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckableRelativeLayout>

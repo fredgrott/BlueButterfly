@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -10,7 +10,7 @@
             android:layout_height="1dp"
             android:background="#ccc"/>
 
-        <com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckableImageView
+        <com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckableImageView
             android:id="@android:id/icon"
             android:layout_width="@dimen/secondary_section_icon_size"
             android:layout_height="@dimen/secondary_section_icon_size"
@@ -21,7 +21,7 @@
             android:layout_centerVertical="true"
             tools:visibility="visible"/>
 
-        <com.github.shareme.bluebutterfklky.core.widget.googlenavdrawermenu.views.CheckedTextView
+        <com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckedTextView
             android:id="@android:id/text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,11 +30,11 @@
             android:layout_toRightOf="@android:id/icon"
             tools:text="Sección Segunda">
 
-        </com.github.shareme.bluebutterfklky.core.widget.googlenavdrawermenu.views.CheckedTextView>
+        </com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckedTextView>
 
         <View android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#ccc"
             android:layout_below="@android:id/text1"/>
 
-</com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckableRelativeLayout>
+</com.github.shareme.bluebutterfly.googlenavdrawermenu.views.CheckableRelativeLayout>

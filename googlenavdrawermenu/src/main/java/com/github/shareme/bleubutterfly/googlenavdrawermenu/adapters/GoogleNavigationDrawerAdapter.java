@@ -1,4 +1,4 @@
-package com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.adapters;
+package com.github.shareme.bleubutterfly.googlenavdrawermenu.adapters;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.github.shareme.bleubutterfly.googlenavdrawermenu.views.CheckableRelativeLayout;
+import com.github.shareme.bleubutterfly.googlenavdrawermenu.views.CheckedTextView;
 import com.github.shareme.bluebutterfly.core.R;
-import com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckableRelativeLayout;
-import com.github.shareme.bluebutterfly.core.widget.googlenavdrawermenu.views.CheckedTextView;
 
 
 /**
