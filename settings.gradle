@@ -1,1 +1,1 @@
-include ':app', ':core', ':materialcalendarcard', ':googlenavdrawermenu', ':materialleanback', ':materialsearchview', ':materialtextfield'
+include ':app', ':core', ':materialcalendarcard', ':googlenavdrawermenu', ':materialleanback', ':materialsearchview', ':materialtextfield', ':mpagerslidingtabstrip'

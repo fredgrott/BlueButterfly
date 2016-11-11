@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.github.shareme.bluebutterfly.core.widget.mpagerslidingtabstrip;
+package com.github.shareme.bluebutterfly.mpagerslidingtabstrip;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
