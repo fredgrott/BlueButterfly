@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/mpagerslidingtabstrip" />
             <option value="$PROJECT_DIR$/progressbutton" />
             <option value="$PROJECT_DIR$/reveal" />
+            <option value="$PROJECT_DIR$/revealfab" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

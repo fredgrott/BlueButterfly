@@ -1,4 +1,4 @@
-package com.github.shareme.bluebutterfly.core.widget.revealfab.animation;
+package com.github.shareme.bleubutterfly.revealfab.animation;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

@@ -1,4 +1,4 @@
-package com.github.shareme.bluebutterfly.core.widget.revealfab.animation;
+package com.github.shareme.bleubutterfly.revealfab.animation;
 
 import android.animation.Animator;
 import android.animation.TimeInterpolator;
@@ -8,7 +8,7 @@ import android.os.Build;
 import java.lang.ref.WeakReference;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-final class SupportAnimatorImpl extends SupportAnimator{
+final class SupportAnimatorImpl extends SupportAnimator {
 
     WeakReference<Animator> mAnimator;
 

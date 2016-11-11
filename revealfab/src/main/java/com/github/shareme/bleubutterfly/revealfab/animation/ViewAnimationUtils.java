@@ -1,4 +1,4 @@
-package com.github.shareme.bluebutterfly.core.widget.revealfab.animation;
+package com.github.shareme.bleubutterfly.revealfab.animation;
 
 import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
@@ -10,7 +10,7 @@ import java.lang.ref.WeakReference;
 
 import static android.os.Build.VERSION.SDK_INT;
 import static android.os.Build.VERSION_CODES.LOLLIPOP;
-import static com.github.shareme.bluebutterfly.core.widget.revealfab.animation.RevealAnimator.CLIP_RADIUS;
+import static com.github.shareme.bleubutterfly.revealfab.animation.RevealAnimator.CLIP_RADIUS;
 
 
 public class ViewAnimationUtils {
@@ -39,6 +39,7 @@ public class ViewAnimationUtils {
         RevealAnimator revealLayout = (RevealAnimator) view;
         revealLayout.attachRevealInfo(new RevealAnimator.RevealInfo(centerX, centerY, startRadius, endRadius,
                 new WeakReference<>(view)));
+
 
 
         ObjectAnimator reveal = ObjectAnimator.ofFloat(revealLayout, CLIP_RADIUS, startRadius, endRadius);

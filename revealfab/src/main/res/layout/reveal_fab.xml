@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.github.shareme.bluebutterfly.core.widget.revealfab.animation.RevealFrameLayout
+    <com.github.shareme.bluebutterfly.revealfab.animation.RevealFrameLayout
         android:id="@+id/fab_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,4 +1,4 @@
-package com.github.shareme.bluebutterfly.core.widget.revealfab;
+package com.github.shareme.bleubutterfly.revealfab;
 
 import android.animation.Animator;
 import android.content.Context;
@@ -9,19 +9,18 @@ import android.support.design.widget.FloatingActionButton;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.FrameLayout;
 
+import com.github.shareme.bleubutterfly.revealfab.animation.RevealFrameLayout;
+import com.github.shareme.bleubutterfly.revealfab.animation.SupportAnimator;
+import com.github.shareme.bleubutterfly.revealfab.animation.ViewAnimationUtils;
 import com.github.shareme.bluebutterfly.core.R;
-import com.github.shareme.bluebutterfly.core.widget.revealfab.animation.RevealFrameLayout;
-import com.github.shareme.bluebutterfly.core.widget.revealfab.animation.SupportAnimator;
-import com.github.shareme.bluebutterfly.core.widget.revealfab.animation.ViewAnimationUtils;
 
 
 /**
  * Created by sergiocaserohernandez on 22/10/15.
  */
 @SuppressWarnings("unused")
-public class RevealFAB extends FrameLayout {
+public class RevealFAB extends com.github.shareme.bluebutterfly.core.widget.FrameLayout {
 
     private static OnClickListener onClickListener;
     private RevealFrameLayout fabLayout;

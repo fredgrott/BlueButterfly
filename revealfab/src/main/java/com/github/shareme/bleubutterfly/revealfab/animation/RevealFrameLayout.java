@@ -1,13 +1,14 @@
-package com.github.shareme.bluebutterfly.core.widget.revealfab.animation;
+package com.github.shareme.bleubutterfly.revealfab.animation;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Path;
 import android.graphics.Rect;
+import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class RevealFrameLayout extends com.github.shareme.bluebutterfly.core.widget.FrameLayout implements RevealAnimator{
+public class RevealFrameLayout extends com.github.shareme.bluebutterfly.core.widget.FrameLayout implements RevealAnimator {
 
     private Path mRevealPath;
     private final Rect mTargetBounds = new Rect();
@@ -88,7 +89,7 @@ public class RevealFrameLayout extends com.github.shareme.bluebutterfly.core.wid
     }
 
     @Override
-    protected boolean drawChild(Canvas canvas, View child, long drawingTime) {
+    protected boolean drawChild(@NonNull Canvas canvas, @NonNull View child, long drawingTime) {
         if(mRunning && child == mRevealInfo.getTarget()){
             final int state = canvas.save();
 

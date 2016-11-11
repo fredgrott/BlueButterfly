@@ -1,1 +1,1 @@
-include ':app', ':core', ':materialcalendarcard', ':googlenavdrawermenu', ':materialleanback', ':materialsearchview', ':materialtextfield', ':mpagerslidingtabstrip', ':progressbutton', ':reveal'
+include ':app', ':core', ':materialcalendarcard', ':googlenavdrawermenu', ':materialleanback', ':materialsearchview', ':materialtextfield', ':mpagerslidingtabstrip', ':progressbutton', ':reveal', ':revealfab'
