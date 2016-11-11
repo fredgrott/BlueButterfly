@@ -22,6 +22,7 @@
             <option value="$PROJECT_DIR$/revealfab" />
             <option value="$PROJECT_DIR$/selectableroundedimageview" />
             <option value="$PROJECT_DIR$/slidebutton" />
+            <option value="$PROJECT_DIR$/verticalstepperform" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -15,7 +15,7 @@
    limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.verticalstepperform;
+package com.github.shareme.bluebutterfly.verticalstepperform;
 
 import android.app.Activity;
 import android.content.Context;
@@ -46,14 +46,13 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.github.shareme.bluebutterfly.core.R;
-import com.github.shareme.bluebutterfly.core.widget.verticalstepperform.interfaces.VerticalStepperForm;
-import com.github.shareme.bluebutterfly.core.widget.verticalstepperform.utils.Animations;
+
+import com.github.shareme.bluebutterfly.verticalstepperform.interfaces.VerticalStepperForm;
+import com.github.shareme.bluebutterfly.verticalstepperform.utils.Animations;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 
 
 /**

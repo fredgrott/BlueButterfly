@@ -15,7 +15,7 @@
    limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.verticalstepperform.utils;
+package com.github.shareme.bluebutterfly.verticalstepperform.utils;
 
 import android.view.View;
 import android.view.WindowManager;
