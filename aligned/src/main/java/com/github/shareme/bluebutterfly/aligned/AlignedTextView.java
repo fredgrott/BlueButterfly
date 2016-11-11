@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.github.shareme.bluebutterfly.core.widget;
+package com.github.shareme.bluebutterfly.aligned;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -24,7 +24,7 @@ import android.graphics.Paint;
 import android.os.Build;
 import android.util.AttributeSet;
 
-import com.github.shareme.bluebutterfly.core.R;
+
 
 /**
  * Created by fgrott on 11/9/2016.
