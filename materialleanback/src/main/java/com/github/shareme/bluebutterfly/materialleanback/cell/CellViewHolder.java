@@ -15,7 +15,7 @@
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialleanback.cell;
+package com.github.shareme.bluebutterfly.materialleanback.cell;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -26,8 +26,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.github.shareme.bluebutterfly.core.R;
-import com.github.shareme.bluebutterfly.core.widget.materialleanback.MaterialLeanBack;
-import com.github.shareme.bluebutterfly.core.widget.materialleanback.MaterialLeanBackSettings;
+import com.github.shareme.bluebutterfly.materialleanback.MaterialLeanBack;
+import com.github.shareme.bluebutterfly.materialleanback.MaterialLeanBackSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -143,7 +143,7 @@ public class CellViewHolder extends RecyclerView.ViewHolder {
 
     @SuppressWarnings("unchecked")
     public void onBind() {
-        int cell = getAdapterPosition()-CellAdapter.PLACEHOLDER_START_SIZE;
+        int cell = getAdapterPosition()- CellAdapter.PLACEHOLDER_START_SIZE;
         viewHolder.cell = cell;
         adapter.onBindViewHolder(viewHolder,cell);
     }

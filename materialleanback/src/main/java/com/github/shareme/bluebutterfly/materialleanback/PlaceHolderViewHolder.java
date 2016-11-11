@@ -15,7 +15,7 @@
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialleanback;
+package com.github.shareme.bluebutterfly.materialleanback;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

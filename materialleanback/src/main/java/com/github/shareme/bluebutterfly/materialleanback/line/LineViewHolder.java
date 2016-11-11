@@ -15,7 +15,7 @@
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialleanback.line;
+package com.github.shareme.bluebutterfly.materialleanback.line;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
@@ -25,10 +25,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.github.shareme.bluebutterfly.core.R;
-import com.github.shareme.bluebutterfly.core.widget.materialleanback.MaterialLeanBack;
-import com.github.shareme.bluebutterfly.core.widget.materialleanback.MaterialLeanBackSettings;
-import com.github.shareme.bluebutterfly.core.widget.materialleanback.cell.CellAdapter;
-import com.github.shareme.bluebutterfly.core.widget.materialleanback.cell.CellViewHolder;
+import com.github.shareme.bluebutterfly.materialleanback.MaterialLeanBack;
+import com.github.shareme.bluebutterfly.materialleanback.MaterialLeanBackSettings;
+import com.github.shareme.bluebutterfly.materialleanback.cell.CellAdapter;
+import com.github.shareme.bluebutterfly.materialleanback.cell.CellViewHolder;
 
 
 /**

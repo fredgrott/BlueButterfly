@@ -15,7 +15,7 @@
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialleanback.cell;
+package com.github.shareme.bluebutterfly.materialleanback.cell;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -24,9 +24,9 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 
 import com.github.shareme.bluebutterfly.core.R;
-import com.github.shareme.bluebutterfly.core.widget.materialleanback.MaterialLeanBack;
-import com.github.shareme.bluebutterfly.core.widget.materialleanback.MaterialLeanBackSettings;
-import com.github.shareme.bluebutterfly.core.widget.materialleanback.PlaceHolderViewHolder;
+import com.github.shareme.bluebutterfly.materialleanback.MaterialLeanBack;
+import com.github.shareme.bluebutterfly.materialleanback.MaterialLeanBackSettings;
+import com.github.shareme.bluebutterfly.materialleanback.PlaceHolderViewHolder;
 
 
 /**

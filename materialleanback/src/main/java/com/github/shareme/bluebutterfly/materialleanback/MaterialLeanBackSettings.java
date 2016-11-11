@@ -15,7 +15,7 @@
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialleanback;
+package com.github.shareme.bluebutterfly.materialleanback;
 
 import android.content.Context;
 import android.content.res.TypedArray;
