@@ -15,7 +15,7 @@
    limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.slidebutton;
+package com.github.shareme.bluebutterfly.slidebutton;
 
 import android.content.res.Resources;
 

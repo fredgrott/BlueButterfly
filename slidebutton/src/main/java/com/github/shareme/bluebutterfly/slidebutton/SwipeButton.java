@@ -15,7 +15,7 @@
    limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.slidebutton;
+package com.github.shareme.bluebutterfly.slidebutton;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -30,7 +30,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 
-import com.github.shareme.bluebutterfly.core.R;
+
 
 /**
  * Created by Shitij on 26/08/16.
