@@ -15,7 +15,7 @@ Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialtextfield;
+package com.github.shareme.bluebutterfly.materialtextfield;
 
 import android.content.Context;
 import android.content.res.TypedArray;
