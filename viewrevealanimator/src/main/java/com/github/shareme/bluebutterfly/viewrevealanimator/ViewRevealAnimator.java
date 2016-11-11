@@ -22,7 +22,7 @@
 	THE SOFTWARE.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.viewrevealanimator;
+package com.github.shareme.bluebutterfly.viewrevealanimator;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -41,7 +41,7 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.ViewAnimator;
 
-import com.github.shareme.bluebutterfly.core.R;
+
 
 import timber.log.Timber;
 
@@ -99,13 +99,13 @@ public class ViewRevealAnimator extends FrameLayout {
             mInstance = new ICSRevealAnimatorImpl(this);
         }
 
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ViewRelealAnimator, defStyleAttr, 0);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ViewRevealAnimator, defStyleAttr, 0);
 
-        int resourceIn = a.getResourceId(R.styleable.ViewRelealAnimator_android_inAnimation, 0);
-        int resourceOut = a.getResourceId(R.styleable.ViewRelealAnimator_android_outAnimation, 0);
-        boolean flag = a.getBoolean(R.styleable.ViewRelealAnimator_android_animateFirstView, true);
-        int animationDuration = a.getInteger(R.styleable.ViewRelealAnimator_android_animationDuration, 400);
-        boolean hideBeforeReveal = a.getBoolean(R.styleable.ViewRelealAnimator_vra_hideBeforeReveal, true);
+        int resourceIn = a.getResourceId(R.styleable.ViewRevealAnimator_android_inAnimation, 0);
+        int resourceOut = a.getResourceId(R.styleable.ViewRevealAnimator_android_outAnimation, 0);
+        boolean flag = a.getBoolean(R.styleable.ViewRevealAnimator_android_animateFirstView, true);
+        int animationDuration = a.getInteger(R.styleable.ViewRevealAnimator_android_animationDuration, 400);
+        boolean hideBeforeReveal = a.getBoolean(R.styleable.ViewRevealAnimator_vra_hideBeforeReveal, true);
 
         setInAnimation(context, resourceIn);
         setOutAnimation(context, resourceOut);
@@ -116,7 +116,7 @@ public class ViewRevealAnimator extends FrameLayout {
 
         if (Build.VERSION.SDK_INT >= 21) {
             int resID =
-                a.getResourceId(R.styleable.ViewRelealAnimator_android_interpolator, android.R.interpolator.accelerate_decelerate);
+                a.getResourceId(R.styleable.ViewRevealAnimator_android_interpolator, android.R.interpolator.accelerate_decelerate);
             Interpolator interpolator = AnimationUtils.loadInterpolator(context, resID);
             setInterpolator(interpolator);
         }
@@ -133,9 +133,9 @@ public class ViewRevealAnimator extends FrameLayout {
 
         final TypedArray a = context.obtainStyledAttributes(
             attrs,
-            R.styleable.ViewRelealAnimator);
+            R.styleable.ViewRevealAnimator);
         final boolean measureAllChildren = a.getBoolean(
-            R.styleable.ViewRelealAnimator_android_measureAllChildren, true);
+            R.styleable.ViewRevealAnimator_android_measureAllChildren, true);
         setMeasureAllChildren(measureAllChildren);
         a.recycle();
     }

@@ -22,7 +22,7 @@
 	THE SOFTWARE.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.viewrevealanimator;
+package com.github.shareme.bluebutterfly.viewrevealanimator;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -35,7 +35,7 @@ import android.view.ViewTreeObserver;
 
 import timber.log.Timber;
 
-import static com.github.shareme.bluebutterfly.core.widget.viewrevealanimator.ViewRevealAnimator.DBG;
+import static com.github.shareme.bluebutterfly.viewrevealanimator.ViewRevealAnimator.DBG;
 
 
 /**

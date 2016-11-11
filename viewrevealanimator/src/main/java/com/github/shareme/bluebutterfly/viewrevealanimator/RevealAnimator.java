@@ -22,7 +22,7 @@
 	THE SOFTWARE.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.viewrevealanimator;
+package com.github.shareme.bluebutterfly.viewrevealanimator;
 
 import android.graphics.Point;
 import android.support.annotation.Nullable;

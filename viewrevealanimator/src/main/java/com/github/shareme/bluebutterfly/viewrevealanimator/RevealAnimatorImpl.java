@@ -22,7 +22,7 @@
 	THE SOFTWARE.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.viewrevealanimator;
+package com.github.shareme.bluebutterfly.viewrevealanimator;
 
 /**
  * Created by alessandro on 01/02/15.
