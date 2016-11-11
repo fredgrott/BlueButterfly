@@ -15,12 +15,13 @@ Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialcalendarcard;
+package com.github.shareme.bluebutterfly.materialcalendarcard;
+
+import android.view.View;
 
 
-
-public interface OnItemRender {
+public interface OnCellItemClick {
 	
-	void onRender(CheckableLayout v, CardGridItem item);
+	void onCellClick(View v, CardGridItem item);
 
 }

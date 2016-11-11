@@ -15,7 +15,7 @@ Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialcalendarcard;
+package com.github.shareme.bluebutterfly.materialcalendarcard;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

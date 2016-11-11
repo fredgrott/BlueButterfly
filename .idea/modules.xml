@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/BlueButterfly.iml" filepath="$PROJECT_DIR$/BlueButterfly.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/googlenavdrawermenu/googlenavdrawermenu.iml" filepath="$PROJECT_DIR$/googlenavdrawermenu/googlenavdrawermenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materialcalendarcard/materialcalendarcard.iml" filepath="$PROJECT_DIR$/materialcalendarcard/materialcalendarcard.iml" />
     </modules>
   </component>
 </project>

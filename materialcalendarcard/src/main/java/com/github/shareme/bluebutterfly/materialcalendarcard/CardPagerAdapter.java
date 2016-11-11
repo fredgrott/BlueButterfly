@@ -15,7 +15,7 @@ Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialcalendarcard;
+package com.github.shareme.bluebutterfly.materialcalendarcard;
 
 import android.content.Context;
 import android.os.Parcelable;
@@ -30,7 +30,7 @@ public class CardPagerAdapter extends PagerAdapter {
 	
 	private Context mContext;
 	private OnCellItemClick defaultOnCellItemClick;
-	
+
 	public CardPagerAdapter(Context ctx) {
 		mContext = ctx;
 	}
@@ -44,22 +44,22 @@ public class CardPagerAdapter extends PagerAdapter {
 		card.notifyChanges();
 		if (card.getOnCellItemClick() == null)
 			card.setOnCellItemClick(defaultOnCellItemClick);
-		
+
 		((ViewPager) collection).addView(card,0);
-		
+
 		return card;
 	}
-	
+
 	@Override
 	public void destroyItem(View collection, int position, Object view) {
 		((ViewPager) collection).removeView((View) view);
 	}
-	
+
 	@Override
 	public boolean isViewFromObject(View view, Object object) {
 		return view==((View)object);
 	}
-	
+
 	@Override
 	public void finishUpdate(View arg0) {}
 	@Override
