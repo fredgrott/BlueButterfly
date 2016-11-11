@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/selectableroundedimageview/selectableroundedimageview.iml" filepath="$PROJECT_DIR$/selectableroundedimageview/selectableroundedimageview.iml" />
       <module fileurl="file://$PROJECT_DIR$/slidebutton/slidebutton.iml" filepath="$PROJECT_DIR$/slidebutton/slidebutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/verticalstepperform/verticalstepperform.iml" filepath="$PROJECT_DIR$/verticalstepperform/verticalstepperform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewrevealanimator/viewrevealanimator.iml" filepath="$PROJECT_DIR$/viewrevealanimator/viewrevealanimator.iml" />
     </modules>
   </component>
 </project>

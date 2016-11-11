@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/selectableroundedimageview" />
             <option value="$PROJECT_DIR$/slidebutton" />
             <option value="$PROJECT_DIR$/verticalstepperform" />
+            <option value="$PROJECT_DIR$/viewrevealanimator" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
