@@ -1,4 +1,4 @@
-package com.github.shareme.bluebutterfly.core.widget.reveal;
+package com.github.shareme.bluebutterfly.reveal;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -11,7 +11,6 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
-
 
 
 /**

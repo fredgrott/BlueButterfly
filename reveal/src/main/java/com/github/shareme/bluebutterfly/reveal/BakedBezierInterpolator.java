@@ -1,4 +1,4 @@
-package com.github.shareme.bluebutterfly.core.widget.reveal;
+package com.github.shareme.bluebutterfly.reveal;
 
 import android.view.animation.Interpolator;
 
