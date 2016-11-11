@@ -15,7 +15,7 @@
     limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.selectableroundedimageview;
+package com.github.shareme.bluebutterfly.selectableroundedimageview;
 
 
 import android.content.Context;
@@ -41,9 +41,9 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
 import android.util.AttributeSet;
-import android.util.Log;
 
-import com.github.shareme.bluebutterfly.core.R;
+import timber.log.Timber;
+
 
 @SuppressWarnings("unused")
 public class SelectableRoundedImageView extends com.github.shareme.bluebutterfly.core.widget.ImageView {
@@ -201,7 +201,7 @@ public class SelectableRoundedImageView extends com.github.shareme.bluebutterfly
             try {
                 d = rsrc.getDrawable(mResource);
             } catch (NotFoundException e) {
-                Log.w(TAG, "Unable to find resource: " + mResource, e);
+                Timber.w(TAG, "Unable to find resource: " + mResource, e);
                 // Don't try again.
                 mResource = 0;
             }
@@ -384,7 +384,7 @@ public class SelectableRoundedImageView extends com.github.shareme.bluebutterfly
                 if (bm != null) {
                     return new SelectableRoundedCornerDrawable(bm, r);
                 } else {
-                    Log.w("me", "Failed to create bitmap from drawable!");
+                    Timber.w("me", "Failed to create bitmap from drawable!");
                 }
             }
             return drawable;

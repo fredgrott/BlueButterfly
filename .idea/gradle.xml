@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/progressbutton" />
             <option value="$PROJECT_DIR$/reveal" />
             <option value="$PROJECT_DIR$/revealfab" />
+            <option value="$PROJECT_DIR$/selectableroundedimageview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
