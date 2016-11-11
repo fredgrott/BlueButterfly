@@ -1,1 +1,1 @@
-include ':app', ':core', ':materialcalendarcard', ':googlenavdrawermenu', ':materialleanback'
+include ':app', ':core', ':materialcalendarcard', ':googlenavdrawermenu', ':materialleanback', ':materialsearchview'

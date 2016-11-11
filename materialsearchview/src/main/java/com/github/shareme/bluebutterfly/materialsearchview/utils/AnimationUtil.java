@@ -15,7 +15,7 @@ Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
 	limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialsearchview.utils;
+package com.github.shareme.bluebutterfly.materialsearchview.utils;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

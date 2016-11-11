@@ -15,7 +15,7 @@ Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
 	limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialsearchview;
+package com.github.shareme.bluebutterfly.materialsearchview;
 
 import android.app.Activity;
 import android.content.Context;
@@ -49,7 +49,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.github.shareme.bluebutterfly.core.R;
-import com.github.shareme.bluebutterfly.core.widget.materialsearchview.utils.AnimationUtil;
+import com.github.shareme.bluebutterfly.materialsearchview.utils.AnimationUtil;
 
 import java.lang.reflect.Field;
 import java.util.List;

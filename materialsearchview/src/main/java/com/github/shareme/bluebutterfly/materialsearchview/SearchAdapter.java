@@ -15,7 +15,7 @@ Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
 	limitations under the License.
 
  */
-package com.github.shareme.bluebutterfly.core.widget.materialsearchview;
+package com.github.shareme.bluebutterfly.materialsearchview;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
