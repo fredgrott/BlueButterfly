@@ -1,3 +1,4 @@
+![bleubutterfly](art/bluebutterfly.jpg)
 BlueButterfly
 =============
 
@@ -15,6 +16,8 @@ coming soon..
 
 
 # About
+
+![gwslogo](art/gws_github_header.png)
 
 Fred Grott(GrottWorkShop) is a seasoned start-up developer nomad who specializes 
 in Android java Application Development with over 3000 StackOverFlow points 
