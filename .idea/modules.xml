@@ -32,6 +32,7 @@
       <module fileurl="file://$PROJECT_DIR$/slidebutton/slidebutton.iml" filepath="$PROJECT_DIR$/slidebutton/slidebutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/taptargetview/taptargetview.iml" filepath="$PROJECT_DIR$/taptargetview/taptargetview.iml" />
       <module fileurl="file://$PROJECT_DIR$/tooltips/tooltips.iml" filepath="$PROJECT_DIR$/tooltips/tooltips.iml" />
+      <module fileurl="file://$PROJECT_DIR$/verticalintro/verticalintro.iml" filepath="$PROJECT_DIR$/verticalintro/verticalintro.iml" />
       <module fileurl="file://$PROJECT_DIR$/verticalstepperform/verticalstepperform.iml" filepath="$PROJECT_DIR$/verticalstepperform/verticalstepperform.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewrevealanimator/viewrevealanimator.iml" filepath="$PROJECT_DIR$/viewrevealanimator/viewrevealanimator.iml" />
     </modules>
