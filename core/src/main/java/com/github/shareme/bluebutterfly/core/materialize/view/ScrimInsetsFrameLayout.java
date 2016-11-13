@@ -30,7 +30,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.github.shareme.bluebutterfly.core.R;
-import com.github.shareme.bluebutterfly.core.widget.FrameLayout;
 
 
 
@@ -39,7 +38,7 @@ import com.github.shareme.bluebutterfly.core.widget.FrameLayout;
  * A layout that draws something in the insets passed to {@link #fitSystemWindows(Rect)}, i.e. the area above UI chrome
  * (status and navigation bars, overlay action bars).
  */
-public class ScrimInsetsFrameLayout extends FrameLayout implements IScrimInsetsLayout {
+public class ScrimInsetsFrameLayout extends com.github.shareme.bluebutterfly.core.widget.FrameLayout implements IScrimInsetsLayout {
     private Drawable mInsetForeground;
     private Rect mInsets;
     private Rect mTempRect = new Rect();
