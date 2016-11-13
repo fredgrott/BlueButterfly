@@ -25,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/materialsettings/materialsettings.iml" filepath="$PROJECT_DIR$/materialsettings/materialsettings.iml" />
       <module fileurl="file://$PROJECT_DIR$/materialtextfield/materialtextfield.iml" filepath="$PROJECT_DIR$/materialtextfield/materialtextfield.iml" />
       <module fileurl="file://$PROJECT_DIR$/mpagerslidingtabstrip/mpagerslidingtabstrip.iml" filepath="$PROJECT_DIR$/mpagerslidingtabstrip/mpagerslidingtabstrip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pathview/pathview.iml" filepath="$PROJECT_DIR$/pathview/pathview.iml" />
       <module fileurl="file://$PROJECT_DIR$/progressbutton/progressbutton.iml" filepath="$PROJECT_DIR$/progressbutton/progressbutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/reveal/reveal.iml" filepath="$PROJECT_DIR$/reveal/reveal.iml" />
       <module fileurl="file://$PROJECT_DIR$/revealfab/revealfab.iml" filepath="$PROJECT_DIR$/revealfab/revealfab.iml" />
