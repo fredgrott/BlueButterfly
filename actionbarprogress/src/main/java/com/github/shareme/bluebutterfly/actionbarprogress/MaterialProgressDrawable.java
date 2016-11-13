@@ -27,6 +27,7 @@ import android.view.Gravity;
 /**
  * Drawable for ProgressBar
  */
+@SuppressWarnings("unused")
 public class MaterialProgressDrawable extends LayerDrawable {
 
     /**

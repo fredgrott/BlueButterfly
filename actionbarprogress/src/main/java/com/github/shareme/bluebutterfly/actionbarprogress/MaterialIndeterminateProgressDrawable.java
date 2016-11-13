@@ -31,6 +31,7 @@ import android.view.animation.Interpolator;
 /**
  * Drawable for indeterminate horizontal ProgressBar
  */
+@SuppressWarnings("unused")
 public class MaterialIndeterminateProgressDrawable extends Drawable {
 
     private final int trackColor;
@@ -83,7 +84,7 @@ public class MaterialIndeterminateProgressDrawable extends Drawable {
     }
 
     @Override
-    public void draw(Canvas canvas) {
+    public void draw(@NonNull Canvas canvas) {
         final int level = getLevel();
         final float input = level / 10000f;
 
