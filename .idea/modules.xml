@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/blaze/blaze.iml" filepath="$PROJECT_DIR$/blaze/blaze.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/crossfadedrawerlayout/crossfadedrawerlayout.iml" filepath="$PROJECT_DIR$/crossfadedrawerlayout/crossfadedrawerlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crossfader/crossfader.iml" filepath="$PROJECT_DIR$/crossfader/crossfader.iml" />
       <module fileurl="file://$PROJECT_DIR$/draglinearlayout/draglinearlayout.iml" filepath="$PROJECT_DIR$/draglinearlayout/draglinearlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/drawme/drawme.iml" filepath="$PROJECT_DIR$/drawme/drawme.iml" />
       <module fileurl="file://$PROJECT_DIR$/edittextvalidator/edittextvalidator.iml" filepath="$PROJECT_DIR$/edittextvalidator/edittextvalidator.iml" />
