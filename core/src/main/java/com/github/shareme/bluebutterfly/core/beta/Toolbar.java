@@ -1,5 +1,23 @@
+/*
+Copyright 2015 Marcin Korniluk 'Zielony'
+Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+ */
 package com.github.shareme.bluebutterfly.core.beta;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -140,6 +158,7 @@ public class Toolbar extends ViewGroup {
         this(context, attrs, R.attr.toolbarStyle);
     }
 
+    @SuppressLint("PrivateResource")
     public Toolbar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
@@ -198,12 +217,12 @@ public class Toolbar extends ViewGroup {
         mCollapseIcon = a.getDrawable(R.styleable.Toolbar_collapseIcon);
         mCollapseDescription = a.getText(R.styleable.Toolbar_collapseContentDescription);
 
-        final CharSequence title = a.getText(R.styleable.Toolbar_title);
+        @SuppressLint("PrivateResource") final CharSequence title = a.getText(R.styleable.Toolbar_title);
         if (!TextUtils.isEmpty(title)) {
             setTitle(title);
         }
 
-        final CharSequence subtitle = a.getText(R.styleable.Toolbar_subtitle);
+        @SuppressLint("PrivateResource") final CharSequence subtitle = a.getText(R.styleable.Toolbar_subtitle);
         if (!TextUtils.isEmpty(subtitle)) {
             setSubtitle(subtitle);
         }
@@ -1269,6 +1288,7 @@ public class Toolbar extends ViewGroup {
         setMeasuredDimension(measuredWidth, shouldCollapse() ? 0 : measuredHeight);
     }
 
+    @SuppressLint("RtlHardcoded")
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         final boolean isRtl = ViewCompat.getLayoutDirection(this) == ViewCompat.LAYOUT_DIRECTION_RTL;
@@ -1610,6 +1630,7 @@ public class Toolbar extends ViewGroup {
         }
     }
 
+    @SuppressLint("RtlHardcoded")
     private int getChildHorizontalGravity(int gravity) {
         final int ld = ViewCompat.getLayoutDirection(this);
         final int absGrav = GravityCompat.getAbsoluteGravity(gravity, ld);

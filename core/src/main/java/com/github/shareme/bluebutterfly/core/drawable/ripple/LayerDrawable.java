@@ -1,3 +1,20 @@
+/*
+Copyright 2015 Marcin Korniluk 'Zielony'
+Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+ */
 package com.github.shareme.bluebutterfly.core.drawable.ripple;
 
 import android.annotation.TargetApi;
@@ -17,7 +34,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v4.view.GravityCompat;
 import android.util.AttributeSet;
-import android.util.LayoutDirection;
+
 import android.view.Gravity;
 import android.view.View;
 
@@ -52,6 +69,7 @@ import java.io.IOException;
  * @attr ref android.R.styleable#LayerDrawableItem_drawable
  * @attr ref android.R.styleable#LayerDrawableItem_id
  */
+@SuppressWarnings("unused")
 public class LayerDrawable extends LollipopDrawable implements Drawable.Callback {
     /**
      * Padding mode used to nest each layer inside the padding of the previous
@@ -861,22 +879,22 @@ public class LayerDrawable extends LollipopDrawable implements Drawable.Callback
     }
 
     @Override
-    public void invalidateDrawable(Drawable who) {
+    public void invalidateDrawable(@NonNull Drawable who) {
         invalidateSelf();
     }
 
     @Override
-    public void scheduleDrawable(Drawable who, Runnable what, long when) {
+    public void scheduleDrawable(@NonNull Drawable who, @NonNull Runnable what, long when) {
         scheduleSelf(what, when);
     }
 
     @Override
-    public void unscheduleDrawable(Drawable who, Runnable what) {
+    public void unscheduleDrawable(@NonNull Drawable who, @NonNull Runnable what) {
         unscheduleSelf(what);
     }
 
     @Override
-    public void draw(Canvas canvas) {
+    public void draw(@NonNull Canvas canvas) {
         final ChildDrawable[] array = mLayerState.mChildren;
         final int N = mLayerState.mNum;
         for (int i = 0; i < N; i++) {
@@ -894,7 +912,7 @@ public class LayerDrawable extends LollipopDrawable implements Drawable.Callback
 
     @SuppressWarnings("WrongConstant")
     @Override
-    public boolean getPadding(Rect padding) {
+    public boolean getPadding(@NonNull Rect padding) {
         final LayerState layerState = mLayerState;
         if (layerState.mPaddingMode == PADDING_MODE_NEST) {
             computeNestedPadding(padding);
@@ -914,7 +932,7 @@ public class LayerDrawable extends LollipopDrawable implements Drawable.Callback
 
         final int paddingRtlLeft;
         final int paddingRtlRight;
-        if (Build.VERSION.SDK_INT >= 23 && getLayoutDirection() == LayoutDirection.RTL) {
+        if (Build.VERSION.SDK_INT >= 23 && getLayoutDirection() == 1) {
             paddingRtlLeft = layerState.mPaddingEnd;
             paddingRtlRight = layerState.mPaddingStart;
         } else {
@@ -1400,7 +1418,8 @@ public class LayerDrawable extends LollipopDrawable implements Drawable.Callback
         int padB = 0;
 
         final Rect outRect = mTmpOutRect;
-        int layoutDirection = LayoutDirection.LTR;
+      //had LAyoutDirection.LTR which is api 19 call
+        int layoutDirection = 0;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
             layoutDirection = getLayoutDirection();
         final boolean nest = mLayerState.mPaddingMode == PADDING_MODE_NEST;
@@ -1422,7 +1441,8 @@ public class LayerDrawable extends LollipopDrawable implements Drawable.Callback
             // direction. If start / end padding are not defined, use the
             // left / right ones.
             final int insetL, insetR;
-            if (layoutDirection == LayoutDirection.RTL) {
+          //same LayoutDirection.RTL is api 19 call
+            if (layoutDirection == 1) {
                 insetL = r.mInsetE == UNDEFINED_INSET ? r.mInsetL : r.mInsetE;
                 insetR = r.mInsetS == UNDEFINED_INSET ? r.mInsetR : r.mInsetS;
             } else {
@@ -1517,10 +1537,10 @@ public class LayerDrawable extends LollipopDrawable implements Drawable.Callback
             // direction. If start / end padding are not defined, use the
             // left / right ones.
             final int insetL, insetR;
-            int layoutDirection = LayoutDirection.LTR;
+            int layoutDirection = 0;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
                 layoutDirection = getLayoutDirection();
-            if (layoutDirection == LayoutDirection.RTL) {
+            if (layoutDirection == 1) {
                 insetL = r.mInsetE == UNDEFINED_INSET ? r.mInsetL : r.mInsetE;
                 insetR = r.mInsetS == UNDEFINED_INSET ? r.mInsetR : r.mInsetS;
             } else {
@@ -1626,6 +1646,7 @@ public class LayerDrawable extends LollipopDrawable implements Drawable.Callback
         return null;
     }
 
+    @NonNull
     @Override
     public Drawable mutate() {
         if (!mMutated && super.mutate() == this) {
@@ -1812,11 +1833,13 @@ public class LayerDrawable extends LollipopDrawable implements Drawable.Callback
             return false;
         }
 
+        @NonNull
         @Override
         public Drawable newDrawable() {
             return new LayerDrawable(this, null);
         }
 
+        @NonNull
         @Override
         public Drawable newDrawable(Resources res) {
             return new LayerDrawable(this, res);

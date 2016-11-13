@@ -38,6 +38,8 @@ package com.github.shareme.bluebutterfly.core.internal;
  */
 
 
+import android.support.annotation.NonNull;
+
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
 import java.util.HashSet;
@@ -60,6 +62,7 @@ public class WeakHashSet extends HashSet {
      *
      * @return an Iterator over the elements in this set.
      */
+    @NonNull
     public Iterator iterator() {
         // remove garbage collected elements
         processQueue();
@@ -102,6 +105,7 @@ public class WeakHashSet extends HashSet {
      * @return <code>true</code> if the set did not already contain the specified
      * element.
      */
+    @SuppressWarnings("unchecked")
     public boolean add(Object o) {
         processQueue();
         return super.add(WeakElement.create(o, this.queue));
@@ -147,6 +151,7 @@ public class WeakHashSet extends HashSet {
      * It redefines equals and hashCode which delegate to the corresponding methods
      * of the wrapped element.
      */
+    @SuppressWarnings("unchecked")
     static private class WeakElement extends WeakReference {
         private int hash; /* Hashcode of key, stored here since the key
                                may be tossed by the GC */

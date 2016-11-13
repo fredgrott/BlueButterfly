@@ -1,3 +1,20 @@
+/*
+Copyright 2015 Marcin Korniluk 'Zielony'
+Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+ */
 package com.github.shareme.bluebutterfly.core.drawable.ripple;
 
 import android.annotation.TargetApi;
@@ -10,7 +27,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v4.util.LongSparseArray;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.TypedValue;
 import android.util.Xml;
 
@@ -23,6 +39,9 @@ import java.lang.ref.WeakReference;
 import java.util.HashMap;
 import java.util.Map;
 
+import timber.log.Timber;
+
+@SuppressWarnings("unused")
 public class LollipopDrawablesCompat {
     private static final Object mAccessLock = new Object();
 
@@ -268,7 +287,7 @@ public class LollipopDrawablesCompat {
                 dr = LollipopDrawablesCompat.createFromXml(res, rp, theme);
                 rp.close();
             } catch (Exception e) {
-                Log.w(LollipopDrawablesCompat.class.getSimpleName(), "Failed to load drawable resource, " + "using a fallback...", e);
+                Timber.w(LollipopDrawablesCompat.class.getSimpleName(), "Failed to load drawable resource, " + "using a fallback...", e);
                 return res.getDrawable(value.resourceId);
             }
 
@@ -278,7 +297,7 @@ public class LollipopDrawablesCompat {
                 dr = LollipopDrawablesCompat.createFromResourceStream(res, value, is, file, null);
                 is.close();
             } catch (Exception e) {
-                Log.w(LollipopDrawablesCompat.class.getSimpleName(), "Failed to load drawable resource, " + "using a fallback...", e);
+                Timber.w(LollipopDrawablesCompat.class.getSimpleName(), "Failed to load drawable resource, " + "using a fallback...", e);
                 return res.getDrawable(value.resourceId);
             }
         }
@@ -312,15 +331,20 @@ public class LollipopDrawablesCompat {
 
         @Override
         public boolean canApplyTheme(Drawable drawable) {
-            return drawable instanceof LollipopDrawable && ((LollipopDrawable) drawable).canApplyTheme();
+          if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            return drawable instanceof LollipopDrawable && drawable.canApplyTheme();
+          }
+          return false;
         }
 
         @Override
         public void inflate(Drawable drawable, Resources r, XmlPullParser parser, AttributeSet attrs, Resources.Theme theme) throws XmlPullParserException, IOException {
 
             if (drawable instanceof LollipopDrawable) {
-                ((LollipopDrawable) drawable).inflate(r, parser, attrs, theme);
-                return;
+              if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                drawable.inflate(r, parser, attrs, theme);
+              }
+              drawable.inflate(r, parser, attrs);
             }
 
             drawable.inflate(r, parser, attrs);

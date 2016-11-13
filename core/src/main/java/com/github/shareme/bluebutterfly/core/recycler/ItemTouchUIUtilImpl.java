@@ -1,19 +1,21 @@
-/*
- * Copyright (C) 2015 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 
+/*
+Copyright 2015 Marcin Korniluk 'Zielony'
+Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+ */
 package com.github.shareme.bluebutterfly.core.recycler;
 
 import android.graphics.Canvas;
@@ -38,10 +40,10 @@ class ItemTouchUIUtilImpl {
             if (isCurrentlyActive) {
                 Object originalElevation = view.getTag(R.id.item_touch_helper_previous_elevation);
                 if (originalElevation == null) {
-                    originalElevation = view instanceof ShadowView ? ((ShadowView) view).getElevation() : ViewCompat.getElevation(view);
+                    originalElevation = view instanceof ShadowView ? ViewCompat.getElevation(view) : ViewCompat.getElevation(view);
                     float newElevation = 1f + findMaxElevation(recyclerView, view);
                     if (view instanceof ShadowView) {
-                        ((ShadowView) view).setElevation(newElevation);
+                        ViewCompat.setElevation(view, newElevation);
                     } else {
                         ViewCompat.setElevation(view, newElevation);
                     }

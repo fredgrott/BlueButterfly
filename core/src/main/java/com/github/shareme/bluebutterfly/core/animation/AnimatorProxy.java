@@ -1,3 +1,20 @@
+/*
+Copyright 2015 Marcin Korniluk 'Zielony'
+Modifications Copyright(C) 2016 Fred Grott(GrottWorkShop)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+ */
 package com.github.shareme.bluebutterfly.core.animation;
 
 import android.graphics.Camera;
@@ -16,12 +33,13 @@ import java.util.WeakHashMap;
  * platforms. <strong>DO NOT</strong> wrap your views with this class if you
  * are using {@code ObjectAnimator} as it will handle that itself.
  */
+@SuppressWarnings("unused")
 public final class AnimatorProxy extends Animation {
     /** Whether or not the current running platform needs to be proxied. */
-    public static final boolean NEEDS_PROXY = Integer.valueOf(Build.VERSION.SDK).intValue() < Build.VERSION_CODES.HONEYCOMB;
+    public static final boolean NEEDS_PROXY = Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB;
 
     private static final WeakHashMap<View, AnimatorProxy> PROXIES =
-            new WeakHashMap<View, AnimatorProxy>();
+            new WeakHashMap<>();
 
     /**
      * Create a proxy to allow for modifying post-3.0 view properties on all
@@ -64,7 +82,7 @@ public final class AnimatorProxy extends Animation {
         setDuration(0); //perform transformation immediately
         setFillAfter(true); //persist transformation beyond duration
         view.setAnimation(this);
-        mView = new WeakReference<View>(view);
+        mView = new WeakReference<>(view);
     }
 
     public float getAlpha() {
