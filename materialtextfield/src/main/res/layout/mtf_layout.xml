@@ -1,9 +1,9 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.github.shareme.bluebutterfly.core.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="80dp">
 
-    <TextView
+    <com.github.shareme.bluebutterfly.core.widget.TextView
         android:id="@+id/mtf_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:textSize="18sp"
         tools:text="Password" />
 
-    <FrameLayout
+    <com.github.shareme.bluebutterfly.core.widget.FrameLayout
         android:id="@+id/mtf_card"
         android:layout_width="match_parent"
         android:layout_height="@dimen/mtf_cardHeight_final"
@@ -22,7 +22,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/card">
 
-        <ImageView
+        <com.github.shareme.bluebutterfly.core.widget.ImageView
             android:id="@+id/mtf_image"
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -32,7 +32,7 @@
 
             />
 
-        <FrameLayout
+        <com.github.shareme.bluebutterfly.core.widget.FrameLayout
             android:id="@+id/mtf_editTextLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,6 +40,6 @@
             android:paddingLeft="50dp"
             android:paddingRight="10dp" />
 
-    </FrameLayout>
+    </com.github.shareme.bluebutterfly.core.widget.FrameLayout>
 
-</FrameLayout>
+</com.github.shareme.bluebutterfly.core.widget.FrameLayout>
