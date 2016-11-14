@@ -1,10 +1,10 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.github.shareme.bluebutterfly.core.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     style="@style/CalendarCard.Root">
     
-    <TextView 
+    <com.github.shareme.bluebutterfly.core.widget.TextView
         style="@style/CalendarCard.Title"
         android:id="@+id/cardTitle"
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true" />
     
-    <LinearLayout 
+    <com.github.shareme.bluebutterfly.core.widget.LinearLayout
         style="@style/CalendarCard.Days"
         android:id="@+id/cardDays"
         android:layout_width="match_parent"
@@ -20,63 +20,63 @@
         android:orientation="horizontal"
         android:layout_below="@+id/cardTitle">
         
-        <TextView 
+        <com.github.shareme.bluebutterfly.core.widget.TextView
 	        android:id="@+id/cardDay1"
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
 	        style="@style/CalendarCard.Day" />
         
-        <TextView 
+        <com.github.shareme.bluebutterfly.core.widget.TextView
 	        android:id="@+id/cardDay2"
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
 	        style="@style/CalendarCard.Day" />
         
-        <TextView 
+        <com.github.shareme.bluebutterfly.core.widget.TextView
 	        android:id="@+id/cardDay3"
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
 	        style="@style/CalendarCard.Day" />
         
-        <TextView 
+        <com.github.shareme.bluebutterfly.core.widget.TextView
 	        android:id="@+id/cardDay4"
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
 	        style="@style/CalendarCard.Day" />
         
-        <TextView 
+        <com.github.shareme.bluebutterfly.core.widget.TextView
 	        android:id="@+id/cardDay5"
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
 	        style="@style/CalendarCard.Day" />
         
-        <TextView 
+        <com.github.shareme.bluebutterfly.core.widget.TextView
 	        android:id="@+id/cardDay6"
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
 	        style="@style/CalendarCard.Day" />
         
-        <TextView 
+        <com.github.shareme.bluebutterfly.core.widget.TextView
 	        android:id="@+id/cardDay7"
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
 	        style="@style/CalendarCard.Day" />
         
-    </LinearLayout>
+    </com.github.shareme.bluebutterfly.core.widget.LinearLayout>
     
-    <ScrollView 
+    <com.github.shareme.bluebutterfly.core.widget.ScrollView
         android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/cardDays">
 
-	    <LinearLayout
+	    <com.github.shareme.bluebutterfly.core.widget.LinearLayout
 	        style="@style/CalendarCard.Grid"
 	        android:id="@+id/cardGrid"
 	        android:layout_width="match_parent"
@@ -90,8 +90,8 @@
 	        <include layout="@layout/card_row"/>
 	        <include layout="@layout/card_row"/>
 	        
-	    </LinearLayout>
+	    </com.github.shareme.bluebutterfly.core.widget.LinearLayout>
     
-    </ScrollView>
+    </com.github.shareme.bluebutterfly.core.widget.ScrollView>
 
-</RelativeLayout>
+</com.github.shareme.bluebutterfly.core.widget.RelativeLayout>

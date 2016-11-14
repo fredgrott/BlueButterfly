@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.github.shareme.bluebutterfly.core.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
@@ -12,4 +12,4 @@
     <include layout="@layout/card_cell"/>
     <include layout="@layout/card_cell"/>
 
-</LinearLayout>
+</com.github.shareme.bluebutterfly.core.widget.LinearLayout>
