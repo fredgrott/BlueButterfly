@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.github.shareme.bluebutterfly.core.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize">
 
-    <TextView
+    <com.github.shareme.bluebutterfly.core.widget.TextView
         android:id="@+id/suggestion_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:focusable="false"
         android:textSize="16sp" />
 
-    <ImageView
+    <com.github.shareme.bluebutterfly.core.widget.ImageView
         android:id="@+id/suggestion_icon"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -24,4 +24,4 @@
         android:paddingRight="@dimen/search_icon_padding"
         android:focusable="false"
         android:src="@drawable/ic_suggestion" />
-</RelativeLayout>
+</com.github.shareme.bluebutterfly.core.widget.RelativeLayout>
