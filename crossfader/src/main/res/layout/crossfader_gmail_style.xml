@@ -3,26 +3,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <FrameLayout
+    <com.github.shareme.bluebutterfly.core.widget.FrameLayout
         android:id="@+id/panel"
         android:layout_width="320dp"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <com.github.shareme.bluebutterfly.core.widget.LinearLayout
             android:id="@+id/first"
             android:layout_width="320dp"
             android:layout_height="match_parent"
             android:orientation="vertical" />
 
-        <LinearLayout
+        <com.github.shareme.bluebutterfly.core.widget.LinearLayout
             android:id="@+id/second"
             android:layout_width="72dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:visibility="gone" />
-    </FrameLayout>
+    </com.github.shareme.bluebutterfly.core.widget.FrameLayout>
 
-    <LinearLayout
+    <com.github.shareme.bluebutterfly.core.widget.LinearLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
