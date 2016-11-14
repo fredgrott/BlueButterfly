@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/blaze/blaze.iml" filepath="$PROJECT_DIR$/blaze/blaze.iml" />
       <module fileurl="file://$PROJECT_DIR$/cards/cards.iml" filepath="$PROJECT_DIR$/cards/cards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cardscards/cardscards.iml" filepath="$PROJECT_DIR$/cardscards/cardscards.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/crossfadedrawerlayout/crossfadedrawerlayout.iml" filepath="$PROJECT_DIR$/crossfadedrawerlayout/crossfadedrawerlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/crossfader/crossfader.iml" filepath="$PROJECT_DIR$/crossfader/crossfader.iml" />
