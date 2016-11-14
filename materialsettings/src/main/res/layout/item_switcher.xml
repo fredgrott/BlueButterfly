@@ -3,25 +3,25 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	style="?attr/msItem">
 
-	<RelativeLayout
+	<com.github.shareme.bluebutterfly.core.widget.RelativeLayout
 		android:layout_width="0dp"
 		android:layout_height="match_parent"
 		android:orientation="vertical"
 		android:layout_weight="1"
 		android:gravity="center_vertical">
 
-		<TextView
+		<com.github.shareme.bluebutterfly.core.widget.TextView
 			android:id="@+id/material_dialog_item_title"
 			style="?attr/msTextStyle"/>
 
-		<TextView
+		<com.github.shareme.bluebutterfly.core.widget.TextView
 			android:id="@+id/material_dialog_item_subtitle"
 			style="?attr/msSubTextStyle"
 			android:layout_below="@+id/material_dialog_item_title"/>
 
-	</RelativeLayout>
+	</com.github.shareme.bluebutterfly.core.widget.RelativeLayout>
 
-	<LinearLayout
+	<com.github.shareme.bluebutterfly.core.widget.LinearLayout
 		android:layout_width="wrap_content"
 		android:layout_height="match_parent"
 		android:gravity="center">
@@ -30,6 +30,6 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"/>
 
-	</LinearLayout>
+	</com.github.shareme.bluebutterfly.core.widget.LinearLayout>
 
 </com.github.shareme.greenandroid.materialsettings.views.CheckableLinearLayout>

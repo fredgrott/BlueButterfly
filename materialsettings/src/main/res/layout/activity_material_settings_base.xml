@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--suppress AndroidDomInspection -->
-<LinearLayout
+<com.github.shareme.bluebutterfly.core.widget.LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
@@ -23,4 +23,4 @@
 		android:name="MaterialSettingsFragment"
 		tools:layout="@layout/fragment_material_settings"/>
 
-</LinearLayout>
+</com.github.shareme.bluebutterfly.core.widget.LinearLayout>

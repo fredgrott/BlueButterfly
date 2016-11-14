@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<com.github.shareme.bluebutterfly.core.widget.LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 
-	<FrameLayout
+	<com.github.shareme.bluebutterfly.core.widget.FrameLayout
 		android:id="@+id/material_settings_top_frame"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"/>
 
-	<ScrollView
+	<com.github.shareme.bluebutterfly.core.widget.ScrollView
 		android:layout_width="match_parent"
 		android:layout_height="match_parent">
 
-		<LinearLayout
+		<com.github.shareme.bluebutterfly.core.widget.LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:orientation="vertical">
 
-			<FrameLayout
+			<com.github.shareme.bluebutterfly.core.widget.FrameLayout
 				android:id="@+id/material_settings_top_frame_inside"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"/>
 
-			<LinearLayout
+			<com.github.shareme.bluebutterfly.core.widget.LinearLayout
 				android:id="@+id/material_settings_content"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -34,18 +34,18 @@
 				android:paddingTop="@dimen/activity_settings_padding_vertical"
 				android:paddingBottom="@dimen/activity_settings_padding_vertical"/>
 
-			<FrameLayout
+			<com.github.shareme.bluebutterfly.core.widget.FrameLayout
 				android:id="@+id/material_settings_bottom_frame_inside"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"/>
 
-		</LinearLayout>
+		</com.github.shareme.bluebutterfly.core.widget.LinearLayout>
 
-	</ScrollView>
+	</com.github.shareme.bluebutterfly.core.widget.ScrollView>
 
-	<FrameLayout
+	<com.github.shareme.bluebutterfly.core.widget.FrameLayout
 		android:id="@+id/material_settings_bottom_frame"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"/>
 
-</LinearLayout>
+</com.github.shareme.bluebutterfly.core.widget.LinearLayout>

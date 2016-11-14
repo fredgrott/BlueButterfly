@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<com.github.shareme.bluebutterfly.core.widget.RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
 	style="?attr/msItem">
 
-	<ImageView
+	<com.github.shareme.bluebutterfly.core.widget.ImageView
 		android:id="@+id/material_settings_text_icon"
 		android:layout_width="wrap_content"
 		android:layout_height="match_parent"
@@ -11,17 +12,18 @@
 		android:src="@drawable/abc_btn_radio_to_on_mtrl_000"
 		android:layout_marginRight="24dp"
 		android:layout_centerVertical="true"
-		android:visibility="gone"/>
+		android:visibility="gone"
+		tools:ignore="PrivateResource"/>
 
-	<TextView
+	<com.github.shareme.bluebutterfly.core.widget.TextView
 		android:id="@+id/material_settings_text_title"
 		style="?attr/msTextStyle"
 		android:layout_toRightOf="@+id/material_settings_text_icon"/>
 
-	<TextView
+	<com.github.shareme.bluebutterfly.core.widget.TextView
 		android:id="@+id/material_settings_text_subtitle"
 		style="?attr/msSubTextStyle"
 		android:layout_toRightOf="@+id/material_settings_text_icon"
 		android:layout_below="@+id/material_settings_text_title"/>
 
-</RelativeLayout>
+</com.github.shareme.bluebutterfly.core.widget.RelativeLayout>
